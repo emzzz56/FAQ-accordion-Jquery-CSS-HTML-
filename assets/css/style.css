@@ -1,0 +1,18 @@
+@font-face{font-family:WorkSans;src:url(../fonts/WorkSans-VariableFont_wght.ttf)}
+@font-face{font-family:WorkSansItalic;src:url(../fonts/WorkSans-Italic-VariableFont_wght.ttf)}
+*{box-sizing:border-box}
+body,html{margin:0;padding:0;height:100%;font-family:WorkSans,serif}
+body{background-color:#f9eeff;color:#28152b;background-image:url(../images/background-pattern-desktop.svg);background-position:top center;background-repeat:no-repeat;background-size:100% auto;background-attachment:fixed;}
+main{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%}
+.box{background:#fff;border-radius:10px;width:35%;margin:0 auto;padding:20px}
+h1{display:flex;flex-direction:row;align-items:center;gap:15px;font-size:35px}
+article{border-bottom:1px solid #f7f6fe;padding-bottom:15px;margin-bottom:15px}
+article h2{color:#2f1433;font-weight:600;font-size:17px;display:flex;flex-direction:row;align-items:top;justify-content:space-between;cursor:pointer;gap:20px}
+.answer{color:#746675}
+article .answer{height:0;overflow:hidden}
+article.active .answer{display:block;height:auto}
+.attribution{font-size:11px;text-align:center;margin-top:30px}
+.attribution a{color:#000}
+@media(max-width:776px) {
+.box{width:96%}
+}
